@@ -1,0 +1,13 @@
+.intro__signature_theme_dark {
+  color: #FFFFFF;
+
+  &::after {
+    content: '';
+    width: 132px;
+    height: 0;
+    border: 1px solid #707070;
+    background-color: #707070;
+    margin-left: 30px;
+    align-self: center;
+  }
+}

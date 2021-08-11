@@ -1,0 +1,20 @@
+.bikes__card {
+  width: 380px;
+  text-decoration: none;
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 1243px){
+    width: calc(100%/3-40px);
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 767px){
+    display: none;
+    width: 284px;
+    margin: 0;
+  }
+}

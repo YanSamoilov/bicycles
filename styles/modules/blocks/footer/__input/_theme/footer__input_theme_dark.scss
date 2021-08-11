@@ -1,0 +1,29 @@
+.footer__input_theme_dark {
+  color: #FFF;
+  border: 1px solid rgba(125, 125, 125, 0.5);
+
+  &:hover {
+    opacity: 1;
+    color: #FFF;
+    border: 1px solid #7D7D7D;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #C7C7C7;
+  }
+
+  &::-moz-placeholder {
+    @include placeholderEmailThemeDark;
+  }
+  &::-ms-input-placeholder {
+    @include placeholderEmailThemeDark;
+  }
+  &::-webkit-input-placeholder {
+    @include placeholderEmailThemeDark;
+  }
+
+  &::placeholder {
+    @include placeholderEmailThemeDark;
+  }
+}

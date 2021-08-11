@@ -1,0 +1,8 @@
+.training__text {
+  margin-bottom: 182px;
+
+  @media screen and (max-width: 1070px){
+    margin-bottom: 40px;
+    max-width: 370px;
+  }
+}

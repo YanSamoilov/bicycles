@@ -1,0 +1,32 @@
+.intro__sticky-container {
+  width: 440px;
+  height: 300px;
+  margin: 327px 0 79px 50px;
+  background: #F4F4F4;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  left: 510px;
+  top: 0;
+
+  @media screen and (max-width: 1419px){
+    width: 35%;
+    height: 20%;
+  }
+
+  @media screen and (max-width: 1059px){
+    margin: 140px 0 79px 0;
+    left: 30%;
+  }
+
+  @media screen and (max-width: 767px){
+    position: static;
+    width: 234px;
+    height: 160px;
+    margin: 191px 0 77px;
+  }
+}

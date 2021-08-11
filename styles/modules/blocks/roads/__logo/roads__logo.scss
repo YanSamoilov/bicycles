@@ -1,0 +1,22 @@
+.roads__logo {
+  width: 100px;
+  height: 40px;
+  background: no-repeat url(../../../../../images/GreenCorner.svg);
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 16px;
+
+  @media screen and (max-width: 767px){
+    width: 70px;
+    height: 28px;
+    padding-left: 11px;
+    left: calc(50% - 142px);
+    bottom: 14px;
+    background: no-repeat url(../../../../../images/GreenCornerMobile.png);
+    padding-left: 6px;
+  }
+}

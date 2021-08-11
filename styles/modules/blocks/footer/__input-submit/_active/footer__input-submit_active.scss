@@ -1,0 +1,13 @@
+.footer__input-submit_active {
+  display: inline-block;
+
+  @media screen and (max-width: 340px){
+    position: absolute;
+    top: 175px;
+    right: 40px;
+  }
+
+  @media screen and (max-width: 325px){
+    right: 30px;
+  }
+}

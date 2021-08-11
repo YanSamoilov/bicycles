@@ -1,0 +1,13 @@
+.section-title {
+  @include resetTitle;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.09;
+  letter-spacing: -0.5px;
+  color: #151515;
+
+  @media screen and (max-width: 1059px){
+    font-size: 32px;
+    line-height: 1.25;
+    }
+}

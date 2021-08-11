@@ -1,0 +1,17 @@
+.training__title {
+  @include resetTitle;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.09;
+  letter-spacing: -0.5px;
+  margin-bottom: 50px;
+  color: #151515;
+  max-width: 460px;
+
+  @media screen and (max-width: 767px){
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 305px;
+    max-width: 100%;
+  }
+}

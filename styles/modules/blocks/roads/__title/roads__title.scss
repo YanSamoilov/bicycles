@@ -1,0 +1,12 @@
+.roads__title {
+  margin-bottom: 50px;
+  max-width: 460px;
+
+  @media screen and (max-width: 767px){
+    order: 0;
+    // margin: 0 118px 40px 0;
+    max-width: calc(100% - 58px);
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

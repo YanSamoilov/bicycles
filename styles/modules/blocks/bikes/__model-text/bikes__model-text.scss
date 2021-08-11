@@ -1,0 +1,14 @@
+.bikes__model-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #151515;
+
+  @media screen and (max-width: 767px){
+    font-size: 14px;
+    line-height: 1.29;
+    display: table-cell;
+    text-align: center;
+    margin-top: -34px;
+  }
+}

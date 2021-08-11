@@ -1,0 +1,36 @@
+.roads__change-type {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:first-of-type {
+    margin-right: 20px;
+    background: no-repeat center url(../../../../../../images/ArrowLeft.svg) #EBEBEB;
+  }
+
+  &:last-of-type {
+    background: no-repeat center url(../../../../../../images/ArrowRight.svg) #EBEBEB;
+  }
+
+  @media screen and (max-width: 767px){
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-right: 10px;
+      background: no-repeat center url(../../../../../../images/ArrowLeft.svg) #EBEBEB;
+    }
+
+    &:last-of-type {
+      background: no-repeat center url(../../../../../../images/ArrowRight.svg) #EBEBEB;
+    }
+  }
+}

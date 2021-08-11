@@ -1,0 +1,24 @@
+.eddie-phrase {
+  max-width: $maxWidthDesktop;
+  box-sizing: border-box;
+  padding: 120px 120px 60px;
+  background: no-repeat left content-box url(../../../../images/EddieImg.png);
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 1419px){
+    padding: 60px 18px;
+  }
+
+  @media screen and (max-width: 1179px){
+    flex-direction: column;
+    align-items: center;
+    background-position: center top;
+  }
+
+  @media screen and (max-width: 767px){
+    border-top: 1px solid #E3E3E3;
+    background: no-repeat content-box center top url('../../../../images/EddieImgMobile.png');
+    padding: 20px 18px 80px;
+  }
+}

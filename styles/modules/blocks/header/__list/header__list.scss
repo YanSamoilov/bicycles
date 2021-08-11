@@ -1,0 +1,8 @@
+.header__list {
+  @include resetList;
+  display: flex;
+
+  @media screen and (max-width: 438px){
+    display: none;
+  }
+}
