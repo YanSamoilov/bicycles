@@ -1,8 +1,8 @@
 .section-text {
-  @include resetParagraph;
+  margin: 0;
   font-size: 18px;
   line-height: 1.56;
-  color: #222222;
+  color: $blackText;
   opacity: .7;
 
   @media screen and (max-width: 1059px){

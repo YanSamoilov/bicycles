@@ -1,18 +1,23 @@
 .header {
-  max-width: $maxWidthDesktop;
+  max-width: 1440px;
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
-  padding: 28px 120px 28px 0;
+  padding-right: 120px;
+  height: 74px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: $lightBackground;
+  z-index: 5;
 
   @media screen and (max-width: 1419px){
-    padding: 28px 18px;
+    padding-right: 18px;
   }
 
   @media screen and (max-width: 438px){
-    padding: 0 20px 0 0;
-    width: 100%;
-    height: 74px;
-    align-items: center;
+    padding-right: 20px;
   }
 }

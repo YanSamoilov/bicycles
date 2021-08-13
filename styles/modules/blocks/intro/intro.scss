@@ -1,22 +1,22 @@
 .intro {
   max-width: $maxWidthDesktop;
   box-sizing: border-box;
-  padding: 20px 0 0 120px;
-  background: no-repeat right bottom url('../../../../../images/IntroBackground.png');
+  padding: 94px 0 0 120px;
+  background: no-repeat right bottom url('../images/IntroBackground.png');
   display: flex;
 
   @media screen and (max-width: 1419px){
-    padding: 60px 18px;
+    padding: 94px 18px 60px;
   }
 
   @media screen and (max-width: 1059px){
     background-size: 70%;
-    padding-top: 0;
+    padding-top: 74px;
   }
 
   @media screen and (max-width: 767px){
-    background: no-repeat url('../../../../images/IntroBackgroundMobile.png');
-    background-position: right top 160px;
+    background: no-repeat url('../images/IntroBackgroundMobile.png');
+    background-position: right top 234px;
     padding-bottom: 0;
     margin-bottom: 40px;
   }

@@ -1,11 +1,11 @@
 .eddie-phrase__name_theme_dark {
-  color: #FFF;
+  color: $colorWhite;
 
   &::after {
     content: 'Велогонщик';
     font-size: 16px;
     line-height: 1,75;
-    color: #E5E5E5;
+    color: $whiteText;
     opacity: .7;
     display: block;
   }

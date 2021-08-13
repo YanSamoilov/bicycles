@@ -1,11 +1,11 @@
 .eddie-phrase__title {
-  @include resetTitle;
+  margin: 0;
   font-weight: 600;
   font-size: 34px;
   line-height: 1.29;
   letter-spacing: -0.5px;
   margin-bottom: 262px;
-  color: #151515;
+  color: $bolderBlack;
 
   @media screen and (max-width: 1179px){
     margin-bottom: 40px;

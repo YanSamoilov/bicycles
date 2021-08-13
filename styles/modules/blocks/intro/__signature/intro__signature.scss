@@ -1,8 +1,9 @@
 .intro__signature {
+  font-family:  $fontsFamily;
   font-size: 18px;
-  color: #151515;
-  letter-spacing: -0.5px;
+  color: $bolderBlack;
   display: flex;
+  margin: 0;
 
   &::after {
     content: '';

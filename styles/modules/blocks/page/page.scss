@@ -1,7 +1,7 @@
 .page {
-  font-family:  'Inter', 'Arial', sans-serif;
+  font-family:  $fontsFamily;
   font-weight: normal;
-  background-color: #F4F4F4;
+  background-color: $lightBackground;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

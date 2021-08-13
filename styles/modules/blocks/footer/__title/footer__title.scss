@@ -1,10 +1,10 @@
 .footer__title {
-  @include resetTitle;
+  margin: 0;
   max-width: 229px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
-  color: #151515;
+  color: $bolderBlack;
   margin-bottom: 50px;
 
   @media screen and (max-width: 767px){

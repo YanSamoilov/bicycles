@@ -4,7 +4,7 @@
   position: fixed;
   top: 74px;
   left: -100%;
-  background-color: #F4F4F4;
+  background-color: $lightBackground;
   transition: left .3s linear;
   overflow: auto;
   z-index: 3;

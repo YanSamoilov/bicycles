@@ -2,14 +2,22 @@
   width: 380px;
   text-decoration: none;
   margin-right: 30px;
+  position: relative;
+
+  &:first-of-type {
+    z-index: 3;
+  }
+
+  &:nth-of-type(2) {
+    z-index: 2;
+  }
 
   &:last-of-type {
     margin-right: 0;
   }
 
   @media screen and (max-width: 1243px){
-    width: calc(100%/3-40px);
-    margin-right: 20px;
+    width: calc(100% / 3 - 30px);
   }
 
   @media screen and (max-width: 767px){

@@ -2,7 +2,7 @@
   max-width: $maxWidthDesktop;
   box-sizing: border-box;
   padding: 150px 120px 120px;
-  background: no-repeat right content-box url('../../../../images/Training.png');
+  background: no-repeat right content-box url('../images/Training.png');
   display: flex;
 
   @media screen and (max-width: 1419px){
@@ -14,8 +14,8 @@
   }
 
   @media screen and (max-width: 767px){
-    border-top: 1px solid #E3E3E3;
-    background: no-repeat content-box top 80px center url('../../../../images/TrainingMobile.png');
+    border-top: 1px solid $whiteBorder;
+    background: no-repeat content-box top 80px center url('../images/TrainingMobile.png');
     padding: 40px 18px 60px;
   }
 }
