@@ -4,18 +4,6 @@
   list-style-type: none;
 }
 
-@mixin centeredSection {
-  margin: 0 auto;
-}
-
-@mixin resetTitle {
-  margin: 0;
-}
-
-@mixin resetParagraph {
-  margin: 0;
-}
-
 @mixin placeholderEmail {
   font-family:  'Inter', 'Arial', sans-serif;
   font-weight: 500;

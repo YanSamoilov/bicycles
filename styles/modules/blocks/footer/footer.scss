@@ -2,7 +2,7 @@
   max-width: $maxWidthDesktop;
   box-sizing: border-box;
   padding: 80px 120px 60px;
-  background-color: #EFEFEF;
+  background-color: $whiteFooterBackground;
 
   @media screen and (max-width: 1419px){
     padding: 60px 18px;

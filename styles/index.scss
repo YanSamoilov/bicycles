@@ -22,12 +22,10 @@
 @import '../styles/modules/blocks/header/__list-elem/header__list-elem.scss';
 @import '../styles/modules/blocks/header/__list-link/header__list-link.scss';
 @import '../styles/modules/blocks/header/__list-link/_theme/header__list-link_theme_dark.scss';
-
 @import './modules/blocks/header/__burger/header__burger.scss';
 @import './modules/blocks/header/__burger-body/header__burger-body.scss';
 @import './modules/blocks/header/__list-mobile/header__list-mobile.scss';
 @import './modules/blocks/header/__list-elem-mobile/header__list-elem-mobile.scss';
-
 @import './modules/blocks/header/__burger-line/header__burger-line.scss';
 @import './modules/blocks/header/__burger-body/_active/header__burger-body_active.scss';
 @import './modules/blocks/header/__burger-line/_active/header__burger-line_active.scss';
@@ -35,6 +33,7 @@
 @import './modules/blocks/header/__burger-body/_theme/header__burger-body_theme_dark.scss';
 @import './modules/blocks/header/__burger/_theme/header__burger_theme_dark.scss';
 @import './modules/blocks/header/__burger-line/_theme/header__burger-line_theme_dark.scss';
+@import './modules/blocks/header/_theme/header_theme_dark.scss';
 // Intro
 @import '../styles/modules/blocks/intro/intro.scss';
 @import '../styles/modules/blocks/intro/__info/intro__info.scss';
@@ -45,6 +44,7 @@
 @import '../styles/modules/blocks/intro/__signature/intro__signature.scss';
 @import '../styles/modules/blocks/intro/__sticky-container/intro__sticky-container.scss';
 @import '../styles/modules/blocks/intro/__signature/_theme/intro__signature_theme_dark.scss';
+@import '../styles/modules/blocks/intro/__title/_theme/intro__title_theme_dark.scss';
 // Eddie-phrase
 @import '../styles/modules/blocks/eddie-phrase/eddie-phrase.scss';
 @import '../styles/modules/blocks/eddie-phrase/__text-wrapper/eddie-phrase__text-wrapper.scss';
@@ -76,7 +76,7 @@
 @import '../styles/modules/blocks/bikes/__button/_active/bikes__button_active.scss';
 @import '../styles/modules/blocks/bikes/__button/_theme/bikes__button_theme_dark.scss';
 @import '../styles/modules/blocks/bikes/__button/_active/_theme/bikes__button_active_theme_dark.scss';
-@import '../styles/modules/blocks/bikes/__model-text/_theme/bikes__model-text_theme_dark.scss';
+@import '../styles/modules/blocks/bikes/__model-text/_theme/bikes__model-text_theme_dark';
 @import '../styles/modules/blocks/bikes/__card-img/bikes__card-img.scss';
 @import '../styles/modules/blocks/bikes/__card/_active/bikes__card_active.scss';
 @import '../styles/modules/blocks/bikes/__button-point/bikes__button-point.scss';

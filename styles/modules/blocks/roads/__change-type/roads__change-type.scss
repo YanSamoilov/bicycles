@@ -12,11 +12,11 @@
 
   &:first-of-type {
     margin-right: 20px;
-    background: no-repeat center url(../../../../../../images/ArrowLeft.svg) #EBEBEB;
+    background: no-repeat center url('../images/ArrowLeft.svg') #EBEBEB;
   }
 
   &:last-of-type {
-    background: no-repeat center url(../../../../../../images/ArrowRight.svg) #EBEBEB;
+    background: no-repeat center url('../images/ArrowRight.svg') #EBEBEB;
   }
 
   @media screen and (max-width: 767px){
@@ -26,11 +26,11 @@
 
     &:first-of-type {
       margin-right: 10px;
-      background: no-repeat center url(../../../../../../images/ArrowLeft.svg) #EBEBEB;
+      background: no-repeat center url('../images/ArrowLeft.svg') #EBEBEB;
     }
 
     &:last-of-type {
-      background: no-repeat center url(../../../../../../images/ArrowRight.svg) #EBEBEB;
+      background: no-repeat center url('../images/ArrowRight.svg') #EBEBEB;
     }
   }
 }

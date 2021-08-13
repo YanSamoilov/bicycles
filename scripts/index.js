@@ -7,7 +7,7 @@ const BUTTON_BYKES_TT = document.querySelector('#bikes-tt');
 const INPUT_EMAIL = document.querySelector('.footer__input');
 const BUTTON_SUBMITE_EMAIL = document.querySelector('.footer__input-submit');
 const SWITCHER = document.querySelector('.switcher');
-const SWITCHER_CHECKBOX = document.querySelector('.switcher__input');
+const SWITCHER_CHECKBOX = document.querySelectorAll('.switcher__input');
 const FOOTER = document.querySelector('.footer');
 const FOOTER_TITLE = document.querySelector('.footer__title');
 const TRAINING_LINK = document.querySelectorAll('.training__link');
@@ -36,6 +36,9 @@ const HEADER_LIST_MOBILE =document.querySelector('.header__list-mobile');
 const BURGER_SPAN = document.querySelector('.header__burger-line');
 const HEADER_BURGER = document.querySelector('.header__burger');
 const BODY = document.querySelector('.page');
+const HEADER = document.querySelector('.header');
+const CHECK_BOX_FOOTER = document.querySelector('#checkbox-footer');
+const CHECK_BOX_HEADER = document.querySelector('#checkbox-header');
 let bike_model;
 let sections_title;
 let section_texts;
@@ -62,6 +65,8 @@ const handleChangePageTheme = () => {
   HEADER_BURGER_MENU_BODY.classList.toggle('header__burger-body_theme_dark');
   HEADER_BURGER.classList.toggle('header__burger_theme_dark');
   BURGER_SPAN.classList.toggle('header__burger-line_theme_dark');
+  INTRO_TITLE.classList.toggle('intro__title_theme_dark');
+  HEADER.classList.toggle('header_theme_dark');
 
   section_texts.forEach(elem => {
     elem.classList.toggle('section-text_theme_dark');
@@ -136,7 +141,6 @@ const handleChangeBikesType = (listBikes, button) => {
       cardChildren.querySelector('#bike-card-img').src = listBikes[ind].img;
       cardChildren.querySelector('#bike-card-img').alt = listBikes[ind].alt;
       cardChildren.querySelector('.bikes__model-text').textContent = listBikes[ind].model;
-      // actualBikeTypeImages = listBikes;
       ind++;
   })
   removeButtonActive();
@@ -231,7 +235,7 @@ const addActiveButtonSubmit = () => {
   INPUT_EMAIL.placeholder = 'Ваш e-mail';
 }
 
-// Вывести надписб "круто!" при нажатии кнопки ок.
+// Вывести надпись "круто!" при нажатии кнопки ок.
 const changeInputEmailPlaceHolder = (event) => {
   const inputValue = INPUT_EMAIL.value;
   if((inputValue.indexOf('@') != -1) && (inputValue.indexOf('.') != -1)) {
@@ -242,7 +246,7 @@ const changeInputEmailPlaceHolder = (event) => {
   }
 }
 
-// Сборс активности кнопки ОК в при неактивном input-email.
+// Сброс активности кнопки ОК в при неактивном input-email.
 const removeActiveButtonSubmit = () => {
   if (INPUT_EMAIL.value === "") {
     BUTTON_SUBMITE_EMAIL.classList.remove('footer__input-submit_active');
@@ -294,6 +298,13 @@ const closeBurgerMenu = () => {
   BODY.classList.remove('page_active-menu');
 }
 
+// Изменить значение checked у свитчера тем в хедере и футере, если нажимается кнопка лампы в футере на малых разрешениях.
+const changeCheckedSwitcherThemeByLamp = () => {
+  SWITCHER_CHECKBOX.forEach(elem => {
+    elem.checked ? elem.checked = false : elem.checked = true;
+  })
+}
+
 initFirstRoadTypes(indRoadTypes);
 initFirstBikesCards();
 changeIntroElem();
@@ -313,13 +324,23 @@ INPUT_EMAIL.addEventListener('focus',addActiveButtonSubmit);
 BUTTON_SUBMITE_EMAIL.addEventListener('click', changeInputEmailPlaceHolder);
 INPUT_EMAIL.addEventListener('blur', () => {removeActiveButtonSubmit();});
 
-SWITCHER_CHECKBOX.addEventListener('change', handleChangePageTheme);
+SWITCHER_CHECKBOX.forEach (box => {
+  box.addEventListener('click', (e) => {
+    handleChangePageTheme();
+    let target = e.target;
+    target.id === 'checkbox-footer' ? CHECK_BOX_HEADER.checked ? CHECK_BOX_HEADER.checked = false : CHECK_BOX_HEADER.checked = true : '';
+    target.id === 'checkbox-header' ? CHECK_BOX_FOOTER.checked ? CHECK_BOX_FOOTER.checked = false : CHECK_BOX_FOOTER.checked = true : '';
+  });
+})
 window.addEventListener('resize', () => {
   changeIntroElem();
 })
 
 DROPDOWN_BIKE_LIST.addEventListener('change', handleDropdownChangeTypeBike);
-BUTTON_LAMP.addEventListener('click', handleChangePageTheme);
+BUTTON_LAMP.addEventListener('click', () => {
+  changeCheckedSwitcherThemeByLamp();
+  handleChangePageTheme();
+});
 HEADER_BURGER_ICON.addEventListener('click', openBurgerMenu);
 HEADER_LIST_MOBILE.onclick = (event) => {
   let target = event.target;

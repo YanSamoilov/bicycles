@@ -1,5 +1,5 @@
 .footer__input {
-  font-family:  'Inter', 'Arial', sans-serif;
+  font-family:  $fontsFamily;
   width: 360px;
   height: 50px;
   border: 1px solid rgba(199, 199, 199, 0.5);
@@ -7,7 +7,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 2.15;
-  color: #222222;;
+  color: $blackText;
   opacity: .7;
   cursor: pointer;
   transition: all .2s;
@@ -18,7 +18,7 @@
 
   &:hover {
     opacity: 1;
-    color: #151515;
+    color: $bolderBlack;
   }
 
   &:focus {

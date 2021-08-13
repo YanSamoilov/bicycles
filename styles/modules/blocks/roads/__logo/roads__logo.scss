@@ -1,7 +1,7 @@
 .roads__logo {
   width: 100px;
   height: 40px;
-  background: no-repeat url(../../../../../images/GreenCorner.svg);
+  background: no-repeat url('../images/GreenCorner.svg');
   position: absolute;
   left: 0;
   bottom: 16px;
@@ -16,7 +16,7 @@
     padding-left: 11px;
     left: calc(50% - 142px);
     bottom: 14px;
-    background: no-repeat url(../../../../../images/GreenCornerMobile.png);
+    background: no-repeat url('../images/GreenCornerMobile.png');
     padding-left: 6px;
   }
 }

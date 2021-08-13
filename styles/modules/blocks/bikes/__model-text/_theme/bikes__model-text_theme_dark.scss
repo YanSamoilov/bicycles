@@ -1,3 +1,7 @@
 .bikes__model-text_theme_dark {
-  color: #FFF;
+  color: $colorWhite;
+
+  @media screen and (max-width: 767px){
+    color: $bolderBlack;
+  }
 }

@@ -9,17 +9,19 @@
 </head>
 <body class="page">
   <header class="header page__section">
-    <ul class="header__list">
-      <li class="header__list-elem">
-        <a href="#section_roads" class="header__list-link">Покрытия и градиенты</a>
-      </li>
-      <li class="header__list-elem">
-        <a href="#section-bikes" class="header__list-link">Велосипеды</a>
-      </li>
-      <li class="header__list-elem">
-        <a href="#section-training" class="header__list-link">Тренировки</a>
-      </li>
-    </ul>
+    <nav>
+      <ul class="header__list">
+        <li class="header__list-elem">
+          <a href="#title-roads" class="header__list-link">Покрытия и градиенты</a>
+        </li>
+        <li class="header__list-elem">
+          <a href="#title-bikes" class="header__list-link">Велосипеды</a>
+        </li>
+        <li class="header__list-elem">
+          <a href="#title-training" class="header__list-link">Тренировки</a>
+        </li>
+      </ul>
+    </nav>
     <div class="header__burger">
       <span class="header__burger-line"></span>
     </div>
@@ -27,18 +29,18 @@
       <nav>
         <ul class="header__list-mobile">
           <li class="header__list-elem-mobile">
-            <a href="#section_roads" class="header__list-link-mobile">Покрытия и градиенты</a>
+            <a href="#title-roads" class="header__list-link-mobile">Покрытия и градиенты</a>
           </li>
           <li class="header__list-elem-mobile">
-            <a href="#section-bikes" class="header__list-link-mobile">Велосипеды</a>
+            <a href="#title-bikes" class="header__list-link-mobile">Велосипеды</a>
           </li>
           <li class="header__list-elem-mobile">
-            <a href="#section-training" class="header__list-link-mobile">Тренировки</a>
+            <a href="#title-training" class="header__list-link-mobile">Тренировки</a>
           </li>
         </ul>
       </nav>
       <label class="switcher switcher_position_mobile-menu">
-        <input type="checkbox" class="switcher__input">
+        <input type="checkbox" class="switcher__input" id="checkbox-header">
         <span class="switcher__slider"></span>
       </label>
     </div>
@@ -46,14 +48,14 @@
   <main>
     <section class="intro page__section opacity">
       <div class="intro__info">
-        <h2 class="section-title intro__title">Шоссе, ТТ и&nbsp;Грэвел</h2>
+        <h2 class="intro__title">Шоссе, ТТ и&nbsp;Грэвел</h2>
         <p class="section-text intro__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам –
           нужно только определиться с выбором велосипеда и отправиться в путь.
         </p>
         <a href="#" class="intro__detailed-link">
           <span class="intro__detailed-link-text">Подробнее</span>
         </a>
-        <span class="intro__signature">Cannondale Systemsix</span>
+        <p class="intro__signature">Cannondale Systemsix</p>
       </div>
       <div class="intro__sticky-container">
         <picture>
@@ -68,15 +70,15 @@
         <span class="eddie-phrase__name">Эдди Меркс</span>
       </div>
     </section>
-    <section class="roads page__section" id="section_roads">
+    <section class="roads page__section">
       <div class="roads__button-container">
         <button type="button" class="roads__change-type" id="roads__change-type_direction_left"></button>
         <button type="button" class="roads__change-type" id="roads__change-type_direction_right"></button>
       </div>
     </section>
-    <section class="bikes page__section" id="section-bikes">
+    <section class="bikes page__section">
       <div class="bikes__info-container">
-        <h2 class="section-title">Велосипеды</h2>
+        <h2 class="section-title" id="title-bikes">Велосипеды</h2>
         <select name="bikes" class="bikes__dropdown-list">
           <option value="Шоссе" class="bikes__option">Шоссе</option>
           <option value="Грэвел" class="bikes__option">Грэвел</option>
@@ -100,9 +102,9 @@
       <button type="button" class="bikes__button-point" id="point-second-bike"></button>
       <button type="button" class="bikes__button-point" id="point-third-bike"></button>
     </section>
-    <section class="training page__section" id="section-training">
+    <section class="training page__section">
       <div class="training__text-wrapper">
-        <h2 class="training__title">Тренировки</h2>
+        <h2 class="training__title" id="title-training">Тренировки</h2>
         <p class="section-text training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
           а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.
         </p>
@@ -120,14 +122,14 @@
     <div class="footer__flex-wrapper">
       <p class="footer__author">&copy; Road Club 2021</p>
       <label class="switcher switcher_position_footer">
-        <input type="checkbox" class="switcher__input">
+        <input type="checkbox" class="switcher__input" id="checkbox-footer">
         <span class="switcher__slider"></span>
       </label>
       <button class="footer__lamp-button"></button>
     </div>
   </footer>
   <template id="roads-template">
-    <h2 class="roads__title section-title"></h2>
+    <h2 class="roads__title section-title" id="title-roads"></h2>
     <p class="section-text roads__text"></p>
     <div class="roads__img-container">
       <img src="" alt="" class="roads__img" id="roads-img-first">
