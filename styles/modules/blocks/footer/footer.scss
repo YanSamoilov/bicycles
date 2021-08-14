@@ -1,0 +1,18 @@
+.footer {
+  max-width: $maxWidthDesktop;
+  box-sizing: border-box;
+  padding: 80px 120px 60px;
+  background-color: $whiteFooterBackground;
+
+  @media screen and (max-width: 1419px){
+    padding: 60px 18px;
+  }
+
+  @media screen and (max-width: 767px){
+    padding: 60px 18px 16px;
+  }
+
+  @media screen and (max-width: 340px){
+    position: relative;
+  }
+}

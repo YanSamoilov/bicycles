@@ -1,0 +1,32 @@
+.eddie-phrase__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: $bolderBlack;
+  display: block;
+
+  &::after {
+    content: 'Велогонщик';
+    font-size: 16px;
+    line-height: 1.75;
+    color: $blackText;
+    opacity: .7;
+    display: block;
+    margin-top: 6px;
+  }
+
+  @media screen and (max-width: 767px){
+    font-size: 14px;
+    line-height: 1.57;
+
+    &::after {
+      content: 'Велогонщик';
+      font-size: 10px;
+      line-height: 1.6;
+      color: $blackText;
+      opacity: .7;
+      display: block;
+      margin-top: 4px;
+    }
+  }
+}

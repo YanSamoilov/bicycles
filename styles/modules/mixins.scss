@@ -1,0 +1,23 @@
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin placeholderEmail {
+  font-family:  'Inter', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.15;
+  color: #151515;
+  opacity: .7;
+}
+
+@mixin placeholderEmailThemeDark {
+  font-family:  'Inter', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.15;
+  color: #FFF;
+  opacity: .7;
+}

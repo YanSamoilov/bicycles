@@ -1,0 +1,8 @@
+.header__list-mobile {
+  @include resetList;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 316px;
+}

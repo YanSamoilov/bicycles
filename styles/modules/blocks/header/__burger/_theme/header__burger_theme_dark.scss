@@ -1,0 +1,6 @@
+.header__burger_theme_dark {
+
+  &::before, &::after {
+    background-color: $colorWhite;
+  }
+}

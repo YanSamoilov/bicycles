@@ -1,0 +1,12 @@
+.roads__img-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 767px){
+    order: 2;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

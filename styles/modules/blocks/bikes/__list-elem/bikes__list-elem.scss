@@ -1,0 +1,7 @@
+.bikes__list-elem {
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

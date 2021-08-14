@@ -1,0 +1,21 @@
+.intro__signature {
+  font-family:  $fontsFamily;
+  font-size: 18px;
+  color: $bolderBlack;
+  display: flex;
+  margin: 0;
+
+  &::after {
+    content: '';
+    width: 132px;
+    height: 0;
+    border: 1px solid #D7D4D4;
+    background-color: #D7D4D4;
+    margin-left: 30px;
+    align-self: center;
+  }
+
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+}

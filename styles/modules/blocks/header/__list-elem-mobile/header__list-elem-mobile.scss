@@ -1,0 +1,12 @@
+.header__list-elem-mobile {
+  margin-bottom: 32px;
+  transition: all .3s;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+}

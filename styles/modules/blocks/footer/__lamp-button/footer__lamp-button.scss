@@ -1,0 +1,19 @@
+.footer__lamp-button {
+  display: none;
+
+  @media screen and (max-width: 450px){
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: none;
+    transition: all .4s;
+    background: no-repeat center url('../images/logoLamp.svg');
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+}

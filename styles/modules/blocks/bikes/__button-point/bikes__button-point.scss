@@ -1,0 +1,23 @@
+.bikes__button-point {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  margin: 36px 5px 0 0;
+  cursor: pointer;
+  background: #a8a8a8;
+  border-radius: 50%;
+  border: none;
+  display: none;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:first-of-type {
+    margin-left: calc(100% / 2 - 10px);
+  }
+
+  @media screen and (max-width: 767px){
+    display: inline-block;
+  }
+}

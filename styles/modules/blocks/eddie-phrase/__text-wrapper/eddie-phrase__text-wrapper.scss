@@ -1,0 +1,13 @@
+.eddie-phrase__text-wrapper {
+  max-width: 470px;
+
+  @media screen and (max-width: 1179px){
+    margin-top: 495px;
+    max-width: 650px;
+  }
+
+  @media screen and (max-width: 767px){
+    margin-top: 244px;
+    max-width: 284px;
+  }
+}

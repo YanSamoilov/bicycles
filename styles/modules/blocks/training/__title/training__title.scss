@@ -1,0 +1,21 @@
+.training__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.09;
+  letter-spacing: -0.5px;
+  margin-bottom: 50px;
+  color: $bolderBlack;
+  max-width: 460px;
+  padding-top: 100px;
+	margin-top: -100px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+
+  @media screen and (max-width: 767px){
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 305px;
+    max-width: 100%;
+  }
+}

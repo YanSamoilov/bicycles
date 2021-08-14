@@ -1,0 +1,12 @@
+.eddie-phrase__name_theme_dark {
+  color: $colorWhite;
+
+  &::after {
+    content: 'Велогонщик';
+    font-size: 16px;
+    line-height: 1,75;
+    color: $whiteText;
+    opacity: .7;
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+.bikes__button {
+  cursor: pointer;
+  color: $blackText;
+  opacity: .7;
+  transition: all .2s;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+
+  &:hover {
+    opacity: .6;
+  }
+}

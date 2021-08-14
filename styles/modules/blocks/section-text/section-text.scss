@@ -1,0 +1,12 @@
+.section-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $blackText;
+  opacity: .7;
+
+  @media screen and (max-width: 1059px){
+    font-size: 12px;
+    line-height: 1.5;
+    }
+}

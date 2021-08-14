@@ -1,0 +1,18 @@
+.eddie-phrase__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.29;
+  letter-spacing: -0.5px;
+  margin-bottom: 262px;
+  color: $bolderBlack;
+
+  @media screen and (max-width: 1179px){
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 767px){
+    font-size: 23px;
+    line-height: 1.26;
+  }
+}

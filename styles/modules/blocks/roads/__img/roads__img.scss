@@ -1,0 +1,19 @@
+.roads__img {
+  width: 650px;
+  height: 400px;
+
+  @media screen and (max-width: 1419px){
+    width: 47%;
+    height: 27.7%;
+  }
+
+  @media screen and (max-width: 767px){
+    width: 284px;
+    height: 175px;
+    margin: 0 auto;
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+}

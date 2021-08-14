@@ -1,0 +1,18 @@
+.bikes__dropdown-list {
+  display: none;
+
+  @media screen and (max-width: 500px){
+    outline: none;
+    display: inline-block;
+    margin-top: 40px;
+    width: 114px;
+    height: 30px;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.27;
+    color: #151515;
+  }
+}

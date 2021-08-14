@@ -1,0 +1,12 @@
+.roads__change-type_theme_dark {
+  background-color: #434343;
+
+  &:first-of-type {
+    margin-right: 10px;
+    background: no-repeat center url('../images/ArrowLeftDark.svg') #434343;
+  }
+
+  &:last-of-type {
+    background: no-repeat center url('../images/ArrowRightDark.svg') #434343;
+  }
+}

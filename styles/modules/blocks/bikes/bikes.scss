@@ -1,0 +1,14 @@
+.bikes {
+  box-sizing: border-box;
+  padding: 60px 120px;
+  max-width: $maxWidthDesktop;
+
+   @media screen and (max-width: 1419px){
+    padding: 60px 18px;
+  }
+
+  @media screen and (max-width: 767px){
+    padding: 40px 18px 80px;
+    border-top: 1px solid $whiteBorder;
+  }
+}

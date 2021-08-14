@@ -1,0 +1,17 @@
+.footer__input-submit {
+  font-size: 13px;
+  line-height: 2.15;
+  color: $bolderBlack;
+  border: none;
+  padding: 0;
+  width: 16px;
+  height: 28px;
+  cursor: pointer;
+  background: transparent;
+  transform: translateX(-27px);
+  display: none;
+
+  @media screen and (max-width: 340px){
+    transform: translateX(0);
+  }
+}

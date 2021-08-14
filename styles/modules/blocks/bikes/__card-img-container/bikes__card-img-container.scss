@@ -1,0 +1,23 @@
+.bikes__card-img-container {
+  width: 380px;
+  height: 380px;
+  background: $lightBackground;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: -20px 60px 80px rgba(0, 0, 0, 0.44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+
+  @media screen and (max-width: 1243px){
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px){
+    width: 284px;
+    height: 306px;
+    margin-bottom: 0;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  }
+}
