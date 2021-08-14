@@ -811,7 +811,7 @@
   background: #F4F4F4;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  box-shadow: -20px 60px 80px rgba(0, 0, 0, 0.44);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -827,6 +827,7 @@
     width: 284px;
     height: 306px;
     margin-bottom: 0;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   }
 }
 
@@ -1278,7 +1279,7 @@
   content: "";
   width: 28px;
   height: 28px;
-  background: no-repeat center url("../../../../images/SunSwitcher.svg");
+  background: no-repeat center url("../images/SunSwitcher.svg");
 }
 .switcher::after {
   position: absolute;
@@ -1287,7 +1288,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: no-repeat center url("../../../../images/MoonSwitcher.svg");
+  background: no-repeat center url("../images/MoonSwitcher.svg");
 }
 
 .switcher__input {
