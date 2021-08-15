@@ -147,58 +147,22 @@ const handleChangeBikesType = (listBikes, button) => {
   addBikesButtonActive(button);
 }
 
-// Загрузить шаблоны дорог при открытии страницы.
-const initFirstRoadTypes = () => {
-  const ELEM_ROAD_TYPES = ROAD_TYPES[0];  //Первый объект из списка типов дорог.
-  const ROAD_TYPE_TEMPLATE = document.querySelector('#roads-template').content; // Доступ к шаблону.
-  // Клонировать элементы шаблона.
-  const TITLE = ROAD_TYPE_TEMPLATE.querySelector('.roads__title').cloneNode(true);
-  const TEXT = ROAD_TYPE_TEMPLATE.querySelector('.roads__text').cloneNode(true);
-  const IMG_CONTAINER = ROAD_TYPE_TEMPLATE.querySelector('.roads__img-container').cloneNode(true);
-  // Доступ к элементам.
-  const IMG_FIRST = IMG_CONTAINER.querySelector('#roads-img-first');
-  const IMG_SECOND = IMG_CONTAINER.querySelector('#roads-img-second');
-  const LOGO_TYPE = IMG_CONTAINER.querySelector('#road-logo-type');
-  // Заполнить элементов контентом.
-  IMG_FIRST.src = ELEM_ROAD_TYPES.image1;
-  IMG_FIRST.alt = ELEM_ROAD_TYPES.alt1;
-  IMG_SECOND.src = ELEM_ROAD_TYPES.image2;
-  IMG_SECOND.alt = ELEM_ROAD_TYPES.alt2;
-  LOGO_TYPE.src = ELEM_ROAD_TYPES.logo;
-  LOGO_TYPE.alt = ELEM_ROAD_TYPES.altLogo;
-  TITLE.textContent =ELEM_ROAD_TYPES.title;
-  TEXT.textContent = ELEM_ROAD_TYPES.text;
-  // Добавить в разметку.
-  ROAD_SECTION.prepend(TITLE, TEXT, IMG_CONTAINER);
-}
-
-const handleChangeRoadType = (ind) => {
-  if (ind >= ROAD_TYPES.length) {
-    ind = 0;
-  }
-  else if (ind < 0) {
-    ind = ROAD_TYPES.length - 1;
-  }
-  const ELEM_ROAD_TYPES = ROAD_TYPES[ind];
-  fillRoads(ELEM_ROAD_TYPES);
-  indRoadTypes = ind;
-}
-
-// Заполнить элементы секции Roads.
-const fillRoads = (SectionElem) => {
-  const IMG_FIRST = document.querySelector('#roads-img-first');
-  const IMG_SECOND = document.querySelector('#roads-img-second');
-  const LOGO_TYPE = document.querySelector('#road-logo-type');
-  const TITLE = document.querySelector('.roads__title');
-  const TEXT = document.querySelector('.roads__text');
-  TITLE.textContent = SectionElem.title;
-  TEXT.textContent = SectionElem.text;
-  IMG_FIRST.src = SectionElem.image1;
-  IMG_FIRST.alt = SectionElem.alt1;
-  IMG_SECOND.src = SectionElem.image2;
-  IMG_SECOND.alt = SectionElem.alt2;
-  LOGO_TYPE.src = SectionElem.logo;
-  LOGO_TYPE.alt = SectionElem.altLogo;
+// Заполнить секцию типами дорог и описанием из массива.
+const initialRoadSlides = (roadsArray) => {
+  const SWIPER_WRAPPER = document.querySelector('.swiper-wrapper');
+  const ROAD_TEMPLATE =document.querySelector('#roads-template').content;
+  roadsArray.forEach(road => {
+    let SLIDE = ROAD_TEMPLATE.querySelector('.swiper-slide').cloneNode(true);
+    SLIDE.querySelector('.roads__title').textContent = road.title;
+    SLIDE.querySelector('#roads-img-first').src = road.image1;
+    SLIDE.querySelector('#roads-img-first').alt = road.alt1;
+    SLIDE.querySelector('#roads-img-second').src = road.image2;
+    SLIDE.querySelector('#roads-img-second').alt = road.alt2;
+    SLIDE.querySelector('#road-logo-type').src = road.logo;
+    SLIDE.querySelector('#road-logo-type').alt = road.altLogo;
+    SLIDE.querySelector('.roads__text').textContent = road.text;
+    SWIPER_WRAPPER.append(SLIDE);
+  })
 }
 
 // Добавить активную кнопку при выборе типов велосипедов.
@@ -305,12 +269,17 @@ const changeCheckedSwitcherThemeByLamp = () => {
   })
 }
 
-initFirstRoadTypes(indRoadTypes);
+initialRoadSlides(ROAD_TYPES);
 initFirstBikesCards();
 changeIntroElem();
-
-BUTTON_ROAD_LEFT.addEventListener('click', () => handleChangeRoadType(--indRoadTypes));
-BUTTON_ROAD_RIGHT.addEventListener('click', () => handleChangeRoadType(++indRoadTypes));
+new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '#roads__change-type_direction_right',
+    prevEl: '#roads__change-type_direction_left'
+  },
+  spaceBetween: 50,
+  loop: true,
+});
 
 BUTTON_BYKES_HIGHWAY.addEventListener('click', () => handleChangeBikesType(HIGHWAY_BIKES, BUTTON_BYKES_HIGHWAY));
 BUTTON_BYKES_GREVEL.addEventListener('click', () => handleChangeBikesType(GREVEL_BIKES, BUTTON_BYKES_GREVEL));
