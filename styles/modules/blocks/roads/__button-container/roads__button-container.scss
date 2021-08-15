@@ -2,6 +2,9 @@
   display: flex;
 
   @media screen and (max-width: 767px){
-    order: 1;
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 300px) / 2);
+    z-index: 10;
   }
 }
