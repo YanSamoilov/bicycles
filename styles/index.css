@@ -589,7 +589,7 @@
 @media screen and (max-width: 767px) {
   .roads__text {
     order: 4;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -834,7 +834,7 @@
     width: 284px;
     height: 306px;
     margin-bottom: 0;
-    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    box-shadow: -20px 60px 60px rgba(0, 0, 0, 0.44);
   }
 }
 
@@ -912,7 +912,7 @@
   width: 5px;
   height: 5px;
   padding: 0;
-  margin: 36px 5px 0 0;
+  margin: 36px 15px 0 0;
   cursor: pointer;
   background: #a8a8a8;
   border-radius: 50%;
