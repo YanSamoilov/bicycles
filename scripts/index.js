@@ -107,13 +107,15 @@ const addActiveClassCardBike = () => {
 
 // Менять карточки с велосипедами.
 const handleChangeBikeImage = (ind) => {
-  const BIKE_ACTUAL_IMAGES_ARR = document.querySelectorAll('.bikes__card');
-  const BUTTONS_POINT_BIKE_ARR = document.querySelectorAll('.bikes__button-point');
-  BIKE_ACTUAL_IMAGES_ARR[ind].classList.add('bikes__card_active');
-  BIKE_ACTUAL_IMAGES_ARR[activeIndexCardBike].classList.remove('bikes__card_active');
-  BUTTONS_POINT_BIKE_ARR[ind].classList.add('bikes__button-point_active');
-  BUTTONS_POINT_BIKE_ARR[activeIndexCardBike].classList.remove('bikes__button-point_active');
-  activeIndexCardBike = ind;
+  if(ind != activeIndexCardBike) {
+    const BIKE_ACTUAL_IMAGES_ARR = document.querySelectorAll('.bikes__card');
+    const BUTTONS_POINT_BIKE_ARR = document.querySelectorAll('.bikes__button-point');
+    BIKE_ACTUAL_IMAGES_ARR[ind].classList.add('bikes__card_active');
+    BIKE_ACTUAL_IMAGES_ARR[activeIndexCardBike].classList.remove('bikes__card_active');
+    BUTTONS_POINT_BIKE_ARR[ind].classList.add('bikes__button-point_active');
+    BUTTONS_POINT_BIKE_ARR[activeIndexCardBike].classList.remove('bikes__button-point_active');
+    activeIndexCardBike = ind;
+  }
 }
 
 // Инициализировать блок карточек с велосипедами для шоссе из шаблона при первой загрузке страницы.
