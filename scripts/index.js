@@ -274,7 +274,7 @@ const changeCheckedSwitcherThemeByLamp = () => {
 initialRoadSlides(ROAD_TYPES);
 initFirstBikesCards();
 changeIntroElem();
-new Swiper('.swiper-container', {
+new Swiper('.swiper', {
   navigation: {
     nextEl: '#roads__change-type_direction_right',
     prevEl: '#roads__change-type_direction_left'
