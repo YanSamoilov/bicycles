@@ -217,7 +217,7 @@
 
 .header__burger_active::before {
   top: 50%;
-  transform: rotate(-45deg) translate(0px, -50%);
+  transform: rotate(-45deg) translate(0px, -10%);
 }
 .header__burger_active::after {
   bottom: 50%;
